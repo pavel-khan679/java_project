@@ -14,7 +14,7 @@ public class Update_Employee extends Create_Employee implements ActionListener{
     JButton b,b1,b2,b3; 
     String id_emp;
 
-    Update_Employee(String idaa){
+    Update_Employee(String id){
         super(0);
         f=new JFrame("Update Employee details");
         f.setVisible(true);
@@ -23,7 +23,7 @@ public class Update_Employee extends Create_Employee implements ActionListener{
         f.setBackground(Color.white);
         f.setLayout(null);
 
-        id_emp=idaa;    
+        id_emp=id;    
         id15=new JLabel();
         id15.setBounds(0,0,900,500);
         id15.setLayout(null);
@@ -129,7 +129,7 @@ public class Update_Employee extends Create_Employee implements ActionListener{
         b1.addActionListener(this);
         id15.add(b1);
 
-        showData(idaa);
+        showData(id);
     }
 
     int i=0;
